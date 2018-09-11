@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Owl Challenge</title>
+    <style>
+    .imageEffect{
+    /*transition: all 0.5s;*/
+    transition: transform 0.5s;
+    }
+    
+    .transformation:hover{
+    /*filter: drop-shadow(15px 10px 10px gray);*/
+    transform: rotate(360deg) scale(0.5, 0.5);
+    }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Owl</h1>
+        <img class="imageEffect transformation" src="images/owl.jpg" alt="owl" width="320" heigth="240"/>
+    </div>
+</body>
+</html>

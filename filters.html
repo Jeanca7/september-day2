@@ -1,0 +1,72 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Filters</title>
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+
+        div {
+            background-color: #99CCFF;
+            border: 2px solid black;
+            border-radius: 10px;
+            display: inline-block;
+            padding: 20px;
+            /*width:500px;*/
+        }
+
+        img {
+            float: left;
+            margin: 0 20px 20px 20px;
+            border: 2px solid black;
+            filter: saturate(1);
+            transition: filter 1s;
+        }
+
+        .greyscale {
+            filter: saturate(0.1);
+        }
+
+        .specsavers {
+            filter: blur(0);
+        }
+
+        .sepis {
+            filter: sepia(1);
+        }
+        
+        .greysca:hover{
+            filter: grayscale(1); 
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>Greyscale</h1>
+        <img class="greyscale" src="images/owl.jpg" alt="owl" width="320" heigth="240" />
+    </div>
+
+    <div>
+        <h1>Blur</h1>
+        <img class="specsavers" src="images/owl.jpg" alt="owl" width="320" heigth="240" />
+    </div>
+
+
+    <div>
+        <h1>Sepia</h1>
+        <img class="sepis" src="images/owl.jpg" alt="owl" width="320" heigth="240" />
+    </div>
+
+    <div>
+        <h1>Grayscale</h1>
+        <img class="greysca" src="images/owl.jpg" alt="owl" width="320" heigth="240" />
+    </div>
+
+
+</body>
+
+</html>
